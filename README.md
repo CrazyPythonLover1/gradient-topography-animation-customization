@@ -1,1 +1,1 @@
-"# gradient-topography-animation-customization" 
+# gradient-topography-animation-customization
