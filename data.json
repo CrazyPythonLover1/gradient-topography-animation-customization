@@ -2,6 +2,7 @@
     "data":[
         {
             "id":1,
+            "title":"analysis",
             "title1":"Simple",
             "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
             "title2":"Let's play with the thickness of this underline",
@@ -15,19 +16,21 @@
         },
         {
             "id":2,
+            "title":"models",
             "title1":"s",
-            "description1":"",
+            "description1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title2":"s",
-            "description2":"",
+            "description2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title3":"s",
             "description3":"",
             "title4":"s",
             "description4":"",
             "title5":"s",
-            "description5":""
+            "description5":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
             "id":3,
+            "title":"philosophy",
             "title1":"Simple",
             "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
             "title2":"Let's play with the thickness of this underline",
@@ -41,6 +44,7 @@
         },
         {
             "id":4,
+            "title":"comparisons",
             "title1":"s",
             "description1":"",
             "title2":"s",
@@ -50,16 +54,17 @@
             "title4":"s",
             "description4":"",
             "title5":"s",
-            "description5":""
+            "description5":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
             "id":5,
+            "title":"specimens",
             "title1":"s",
             "description1":"",
             "title2":"s",
             "description2":"",
             "title3":"s",
-            "description3":"",
+            "description3":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title4":"s",
             "description4":"",
             "title5":"s",
@@ -67,6 +72,7 @@
         },
         {
             "id":6,
+            "title":"projects",
             "title1":"Simple 6666666666666",
             "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
             "title2":"Let's play with the thickness of this underline",
