@@ -3,8 +3,8 @@
         {
             "id":1,
             "title":"analysis",
-            "title1":"Simple",
-            "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
+            "title1":"Project name 1",
+            "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title2":"Let's play with the thickness of this underline",
             "description2":"I'm an other very long highlighted link.",
             "title3":"But I want it a bit higher compared to the baseline",
@@ -17,8 +17,8 @@
         {
             "id":2,
             "title":"models",
-            "title1":"s",
-            "description1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "title1":"Project name 2",
+            "description1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title2":"s",
             "description2":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title3":"s",
@@ -31,7 +31,7 @@
         {
             "id":3,
             "title":"philosophy",
-            "title1":"Simple",
+            "title1":"Project name 3",
             "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
             "title2":"Let's play with the thickness of this underline",
             "description2":"I'm an other very long highlighted link.",
@@ -45,8 +45,8 @@
         {
             "id":4,
             "title":"comparisons",
-            "title1":"s",
-            "description1":"",
+            "title1":"Project name 4",
+            "description1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title2":"s",
             "description2":"",
             "title3":"s",
@@ -59,8 +59,8 @@
         {
             "id":5,
             "title":"specimens",
-            "title1":"s",
-            "description1":"",
+            "title1":"Project name 5",
+            "description1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "title2":"s",
             "description2":"",
             "title3":"s",
@@ -73,7 +73,7 @@
         {
             "id":6,
             "title":"projects",
-            "title1":"Simple 6666666666666",
+            "title1":"Project name 6",
             "description1":"I'm a very long text and it was a pain in the ass to animate an underline effect - but jeez it's such a simple snippet at the end.",
             "title2":"Let's play with the thickness of this underline",
             "description2":"I'm an other very long highlighted link.",

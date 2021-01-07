@@ -270,17 +270,9 @@
 				</g>
 			</svg>
 
-			<!-- Swiper -->
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-				<!-- <div class="swiper"></div> -->
-					
-				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- Add Arrows -->
-				<!-- <div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div> -->
+			
+			<div class="slider">
+
 			</div>
 		</div>
 		<div class="content content--reveal">
@@ -335,64 +327,62 @@
 	<script src="js/main.js"></script>
 	<script type="module">
 
-		var swiper = new Swiper(".swiper-container", {
-			slidesPerView: 1,
-			spaceBetween: 100,
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			}
-			// navigation: {
-			// 	nextEl: ".swiper-button-next",
-			// 	prevEl: ".swiper-button-prev",
-			// },
-		});
+		// var swiper = new Swiper(".swiper-container", {
+		// 	slidesPerView: 1,
+		// 	spaceBetween: 100,
+		// 	loop: true,
+		// 	// autoplay: {
+		// 	// 	delay: 2500,
+		// 	// 	disableOnInteraction: false,
+		// 	// },
+		// 	pagination: {
+		// 		el: '.swiper-pagination',
+		// 		clickable: true,
+		// 	},
+		// 	navigation: {
+		// 		nextEl: ".swiper-button-next",
+		// 		prevEl: ".swiper-button-prev",
+		// 	},
+		// });
 
-		const swiperWrapper = document.querySelector(".swiper-wrapper");
-		swiperWrapper.innerHTML = "";
+		const slider = document.querySelector(".slider");
+		slider.innerHTML = "";
 
 		fetch("data.json")
 			.then((res) => res.json())
 			.then((data) => {
 				const element = data.data;
 				element.map((data) => {
-					return swiperWrapper.innerHTML += `<div class="swiper-slide">
-						<div class="wrap">
+					return slider.innerHTML += `<div class=" item-${data.id}">
 							<h2> ${data.title} </h2>
 							<h2> ${data.title1} </h2>
 							<p>
 								<a href="#" class="underlined underlined--thin"> ${data.description1} </a>
 							</p>
-
-							<h2> ${data.title2}  </h2>
-							<p>
-								<a href="#" class="underlined underlined--thick"> ${data.description2} </a>
-							</p>
-
-							<h2> ${data.title3}  </h2>
-							<p>
-								<a href="#" class="underlined underlined--offset"> ${data.description3} </a>
-							</p>
-
-							<h2> ${data.title4} </h2>
-							<p>
-								<a href="#" class="underlined underlined--gradient"> ${data.description4} </a>
-							</p>
-
-							<h2> ${data.title5}  </h2>
-							<p>
-								<a href="#" class="underlined underlined--reverse">${data.description5}</a>
-							</p>
-						</div>
 					</div>`
 					
 				});
 			});
+
+			// <h2> ${data.title2}  </h2>
+			// 				<p>
+			// 					<a href="#" class="underlined underlined--thick"> ${data.description2} </a>
+			// 				</p>
+
+			// 				<h2> ${data.title3}  </h2>
+			// 				<p>
+			// 					<a href="#" class="underlined underlined--offset"> ${data.description3} </a>
+			// 				</p>
+
+			// 				<h2> ${data.title4} </h2>
+			// 				<p>
+			// 					<a href="#" class="underlined underlined--gradient"> ${data.description4} </a>
+			// 				</p>
+
+			// 				<h2> ${data.title5}  </h2>
+			// 				<p>
+			// 					<a href="#" class="underlined underlined--reverse">${data.description5}</a>
+			// 				</p>
 	</script>
 </body>
 
