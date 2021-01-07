@@ -9,10 +9,11 @@
 	<meta name="keywords" content="svg, animation, organic, shape, animejs, web design, web development, demo" />
 	<meta name="author" content="Codrops" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400:700:900" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+
 	<script>
 		document.documentElement.className = "js";
 		var supportsCssVars = function () {
@@ -272,14 +273,14 @@
 			<!-- Swiper -->
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-				
+				<!-- <div class="swiper"></div> -->
 					
 				</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
 				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<!-- <div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div> -->
 			</div>
 		</div>
 		<div class="content content--reveal">
@@ -326,41 +327,41 @@
 			</button>
 		</div>
 	</main>
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
 	<script src="js/charming.min.js"></script>
 	<script src="js/anime.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/demo.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="data.json"></script>
-	<script>
+	<script type="module">
+
 		var swiper = new Swiper(".swiper-container", {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 100,
 			loop: true,
 			autoplay: {
 				delay: 2500,
 				disableOnInteraction: false,
 			},
-			// pagination: {
-			// 	el: '.swiper-pagination',
-			// 	clickable: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+			// navigation: {
+			// 	nextEl: ".swiper-button-next",
+			// 	prevEl: ".swiper-button-prev",
 			// },
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
 		});
 
-		const wrapper = document.querySelector(".swiper-wrapper");
+		const swiperWrapper = document.querySelector(".swiper-wrapper");
+		swiperWrapper.innerHTML = "";
 
 		fetch("data.json")
 			.then((res) => res.json())
 			.then((data) => {
 				const element = data.data;
 				element.map((data) => {
-					console.log(data)
-					return wrapper.innerHTML += `<div class="swiper-slide">
+					return swiperWrapper.innerHTML += `<div class="swiper-slide">
 						<div class="wrap">
 							<h2> ${data.title} </h2>
 							<h2> ${data.title1} </h2>
