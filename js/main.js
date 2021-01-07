@@ -170,7 +170,8 @@
         // DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
         const singleWord =  document.querySelectorAll(".menu > span");
         const menuItem = DOM.links.map((link) => link.querySelectorAll('span'))
-        const removedItem = singleWord && menuItem
+        const slider =  document.querySelectorAll(".slider");
+
         anime({
             targets: singleWord,
             delay: (t,i) => anime.random(0,300),
@@ -185,6 +186,18 @@
 
         anime({
             targets: menuItem,
+            delay: (t,i) => anime.random(0,300),
+            duration: 200,
+            easing: 'easeInOutQuad',
+            opacity: 0,
+            begin: () => DOM.links.forEach(link => {
+                link.style.pointerEvents = 'none';
+                link.classList.remove('menu__item--showDeco');
+            })
+        });
+
+        anime({
+            targets: slider,
             delay: (t,i) => anime.random(0,300),
             duration: 200,
             easing: 'easeInOutQuad',
@@ -233,7 +246,8 @@
 
         blobs[current].collapse().then(() => {
             current = -1;
-            const singleWord =  document.querySelectorAll(".menu > span");
+            
+
 
             anime({
                 targets: DOM.links.map((link) => link.querySelectorAll('span')), 
@@ -246,9 +260,25 @@
                     link.classList.add('menu__item--showDeco');
                 })
             });
+            
+            const singleWord =  document.querySelectorAll(".menu > span");
 
             anime({
                 targets:singleWord,
+                duration: 200,
+                delay: (t,i) => anime.random(0,600),
+                easing: 'easeInOutQuad',
+                opacity: 1,
+                complete: () => DOM.links.forEach(link => {
+                    link.style.pointerEvents = 'auto';
+                    link.classList.add('menu__item--showDeco');
+                })
+            });
+
+            const slider =  document.querySelectorAll(".slider");
+
+            anime({
+                targets:slider,
                 duration: 200,
                 delay: (t,i) => anime.random(0,600),
                 easing: 'easeInOutQuad',
