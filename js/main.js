@@ -168,7 +168,7 @@
     const open = (pos) => {
         this.isOpen = true;
         // DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
-        const singleWord =  document.querySelectorAll(".menu > span");
+        const singleWord =  document.querySelectorAll(".menu > .menu__span__group");
         const menuItem = DOM.links.map((link) => link.querySelectorAll('span'))
         const slider =  document.querySelectorAll(".slider");
 
@@ -261,7 +261,7 @@
                 })
             });
             
-            const singleWord =  document.querySelectorAll(".menu > span");
+            const singleWord =  document.querySelectorAll(".menu > .menu__span__group");
 
             anime({
                 targets:singleWord,
