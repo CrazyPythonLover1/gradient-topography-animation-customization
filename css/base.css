@@ -625,7 +625,7 @@ main {
 	transform: translate(0%, -50%);
 	z-index: 1;
 	background: initial;
-	width: 600px;
+	width: 35%;
 	min-height: 600px;
 	padding: 30px 30px;
 	border-radius: 10px;
